@@ -9890,12 +9890,20 @@ h6,
     font-size: 0.5rem;
   }
 
+  .p-5 {
+    height: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contact-info .contact-info-item {
+    min-height: 50px;
+  }
+
   .carousel-caption h5 {
-    font-size: 14px;
+    font-size: 14spx;
     font-weight: 400;
   }
   .carousel-caption h1 {
-    /* font-size: 25px !important; */
     font-weight: 500 !important;
   }
   .carousel-caption .btn {
