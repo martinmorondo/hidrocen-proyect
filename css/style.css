@@ -2604,8 +2604,9 @@ fieldset:disabled a.btn {
 
 .btn-light {
   color: #212529;
-  background-color: #F5F5F5;
-  border-color: #F5F5F5;
+  background-color: #0C2EE1;
+  border-color: #0C2EE1;
+  /* font-size: 3.3rem; */
 }
 
 .btn-light:hover {
@@ -2637,6 +2638,10 @@ fieldset:disabled a.btn {
 .btn-light:not(:disabled):not(.disabled):active:focus, .btn-light:not(:disabled):not(.disabled).active:focus,
 .show > .btn-light.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(213, 214, 214, 0.5);
+}
+
+.fb-icon {
+  font-size: 1rem;
 }
 
 .btn-dark {
@@ -9828,7 +9833,8 @@ h6,
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
   color: #000000;
-  transform: scale(1.1);
+  transform: scale(1.05);
+  text-shadow: 1px 1px 1px black;
 }
 
 @media (max-width: 991.98px) {
@@ -9943,6 +9949,18 @@ h6,
   .carousel-caption .btn {
     font-weight: 400;
     padding: 5px 12px !important;
+  }
+
+  a.btn.btn-light {
+    font-size: 1rem;
+  }
+
+  .btn-light {
+    font-size: 1.5rem;
+  }
+
+  .hidden {
+    display: none;
   }
 
   .footer {
