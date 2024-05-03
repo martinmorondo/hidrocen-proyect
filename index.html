@@ -71,18 +71,19 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="index.html" class="nav-item nav-link active">Inicio</a>
-                            <a href="about.html" class="nav-item nav-link">Nosotros</a>
-                            <a href="service.html" class="nav-item nav-link">Servicios</a>
-                            <a href="project.html" class="nav-item nav-link">Proyectos</a>
-                            <a href="contact.html" class="nav-item nav-link">Contacto</a>
+                            <a href="index.html" class="nav-item nav-link active"><i class="fas fa-home"></i> Inicio</a>
+                            <a href="about.html" class="nav-item nav-link"><i class="fas fa-users"></i> Nosotros</a>
+                            <a href="service.html" class="nav-item nav-link"><i class="fas fa-cogs"></i> Servicios</a>
+                            <a href="project.html" class="nav-item nav-link"><i class="fas fa-project-diagram"></i> Proyectos</a>
+                            <a href="contact.html" class="nav-item nav-link"><i class="fas fa-envelope"></i> Contacto</a>
                         </div>
-                        <a href="contact.html" class="btn btn-primary mr-3 d-none d-lg-block">Contactanos</a>
+                        <a href="contact.html" class="btn btn-primary mr-3 d-none d-lg-block"><i class="fas fa-phone-alt"></i> Contactanos</a>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
+    
     <!-- Header End -->
 
 
@@ -142,27 +143,29 @@
         <div class="row">
             <div class="col-lg-4 p-0">
                 <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-map-marker-alt text-primary mr-4"></i>
+                    <i class="fa fa-3x fa-map-marker-alt text-primary mr-3"></i>
                     <div class="">
-                        <h5 class="mb-2 text-white">Nuestra oficina</h5>
+                        <h5 class="mb-2 pr-4 text-white">Nuestra oficina</h5>
                         <p class="m-0">Oficina Aguascalientes</p>
                     </div>
                 </div>
             </div>
+
             <div class="col-lg-4 p-0">
                 <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-envelope-open text-primary mr-4"></i>
+                    <i class="fa fa-3x fa-envelope-open text-primary mr-3"></i>
                     <div class="">
                         <h5 class="mb-2 text-white">Email</h5>
                         <p class="m-0">hidrocen.ags@gmail.com</p>
                     </div>
                 </div>
             </div>
+            
             <div class="col-lg-4 p-0">
                 <div class="contact-info-item d-flex align-items-center justify-content-center bg-primary text-white py-4 py-lg-0">
-                    <i class="fa fa-3x fa-phone-alt text-primary mr-4"></i>
+                    <i class="fa fa-3x fa-phone-alt text-primary mr-3"></i>
                     <div class="">
-                        <h5 class="mb-2 text-white">Llámanos</h5>
+                        <h5 class="mr-5 pr-4 text-white">Llámanos</h5>
                         <p class="m-0">449 912 1660</p>
                     </div>
                 </div>
@@ -173,7 +176,7 @@
 
 
     <!-- About Start -->
-    <div class="container-fluid py-5 mb-5">
+    <div class="container-fluid py-5 mb-2">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5">
@@ -233,7 +236,7 @@
     <!-- Video Modal End -->
 
     <!-- Features Start -->
-    <div class="container-fluid bg-light py-5">
+    <div class="container-fluid bg-light py-2">
         <div class="container py-5">
             <div class="row">
                 <div class="col-lg-7 pt-lg-5 pb-3">
@@ -255,7 +258,8 @@
                 </div>
                 <div class="col-lg-5" style="min-height: 400px;">
                     <div class="position-relative h-100 rounded overflow-hidden">
-                        <video class="position-absolute w-100 h-100" src="img/hidrogen-video.mp4" style="object-fit: cover;" controls></video>
+                        <!-- <video class="position-absolute w-100 h-100" src="img/hidrogen-video.mp4" style="object-fit: cover;" controls></video> -->
+                        <img class = "position-absolute w-100 h-100" src="img/WhatsApp Image 2024-05-03 at 17.55.46.jpeg" alt="">
                     </div>
                 </div>
             </div>
@@ -848,6 +852,26 @@
                                                 </div>
                                             </div>
                                     </div>
+
+                                    <div class="team d-flex flex-column text-center rounded overflow-hidden">  
+                                        <div class="team d-flex flex-column text-center rounded overflow-hidden">
+                                                <div class="position-relative">
+                                                    <div class="team-img">
+                                                        <img class="img-fluid-project w-100" src="img/bovinos-carne.jpg" alt="">
+                                                    </div>
+                                                    <div class="team-social d-flex flex-column align-items-center justify-content-center bg-primary">                                  
+                                                        <a class="btn btn-secondary btn-social mb-2" href="#" data-target="#bovinos-carne" onclick="openModal(event)" target="_blank">
+                                                            <i class="fa fa-plus"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column bg-primary text-center py-4">
+                                                    <h5 class="font-weight-bold">Full Name</h5>
+                                                    <p class="text-white m-0">Planta de tratamiento de aguas residualdes del rastro bovinos carne
+                                                    </p>
+                                                </div>
+                                            </div>
+                                    </div>    
 
 
                     </div>
@@ -1481,8 +1505,48 @@
         </div>
     </div>
 
+    <div class="modal fade" id="bovinos-carne" tabindex="-1" role="dialog" aria-labelledby="bovinos-carne" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h5 id="projectModalTitle"></h5>
+                    <p id="projectModalDescription">
+                        Planta de tratamiento de aguas residuales del rastro bovinos carne. Union ganadera regional general hidrocalida.
+                        </p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 </div>
+
+<div class="container-fluid py-1">
+    <div class="container py-5">
+        <div class="row align-items-end mb-4">
+            <div class="col-lg-6">
+                <h6 class="text-secondary font-weight-semi-bold text-uppercase mb-3">Finalizado</h6>
+                <h1 class="section-title mb-3">Nuestro último trabajo realizado</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="team-img">
+                    <img class="img-fluid-project w-100 h-25" src="img/bovinos-carne.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
     <!-- Proyects End -->
 
     <!-- Footer Start -->
