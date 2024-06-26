@@ -173,6 +173,21 @@ function openModal(event) {
             modal.remove();
         }
     }
+
+$(document).ready(function() {
+        // Cuando se muestra el modal
+        $('#videoModal').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget); 
+            var videoSrc = button.data('src');   
+            $('#video').attr('src', videoSrc);   
+        });
+
+        // Cuando se cierra el modal
+        $('#videoModal').on('hidden.bs.modal', function (e) {
+            // Detener la reproducción del vídeo
+            $('#video').attr('src', ''); 
+        });
+    });
     
 
     
